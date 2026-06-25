@@ -1,0 +1,89 @@
+:root {
+    --bege: #c59c79;
+    --vermelho: #48192e;
+    --vinho: #281822;
+    --rosa: #957083;
+    --branco: #fbf5f0;
+}
+
+html, body {
+    margin: 0;
+    max-height: 100vh;
+    height: 100vh;
+
+    background-color: var(--vinho);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 92%;
+
+    cursor: default;
+}
+
+.texto {
+    color: var(--branco);
+
+}
+
+#titulo {
+    font-size: 350%;
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    
+    border-bottom: 1.8px solid var(--bege);
+    padding-bottom: 50px;
+}
+
+#nomes {
+    font-size: 1.1em;
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+
+    margin-right: 0.8%;
+
+    gap: 0.5%;
+
+}
+
+#direita {
+    height: 45px;
+    width: 65px;
+
+    color: var(--branco);
+
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background:
+        linear-gradient(var(--vermelho)) padding-box,
+        linear-gradient(90deg, var(--vermelho), var(--bege)) border-box;
+    
+    transition: 500ms;
+}
+
+#direita:hover {
+    transform: scale(1.03);
+    transition: 500ms;
+    background:
+        linear-gradient(var(--vinho)) padding-box,
+        linear-gradient(90deg, var(--vermelho), var(--bege)) border-box;
+
+}
