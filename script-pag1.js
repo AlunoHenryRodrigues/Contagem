@@ -7,5 +7,5 @@ document.addEventListener("keydown", (event) => {
 });
 
 direita.addEventListener("click", () => {
-        window.location.href = "index.html";
+        window.location.href = "pag1.html";
 });
