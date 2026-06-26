@@ -7,49 +7,74 @@
 }
 
 html, body {
-    margin: 0;
     max-height: 100vh;
-    height: 100vh;
+    height: 98vh;
+    width: 98.5%;
+
+    margin-left: 10px;
+    margin-right: 10px;
 
     background-color: var(--vinho);
+
+    color: var(--branco);
 }
 
-.main-container {
+.main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 92%;
-
-    cursor: default;
+    flex-direction: row;
 }
 
 .texto {
-    color: var(--branco);
-
-}
-
-#titulo {
-    font-size: 350%;
     font-family: "Playfair", serif;
+    font-weight: 90;
     font-optical-sizing: auto;
-    font-weight: 500;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
-    
-    border-bottom: 1.8px solid var(--bege);
-    padding-bottom: 50px;
 }
 
-#nomes {
-    font-size: 1.1em;
-    font-family: "Playfair", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 60%;
+}
+
+.imagem {
+    background-color: var(--rosa);
+    height: 300px;
+    width: 600px;
+    margin-top: 108px;
+    margin-left: 50px;
+}
+
+.exemplos {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 50px;
+    font-size: large;
+}
+
+.exemplo {
+    border: 2px solid transparent;
+    width: 50%;
+    padding-left: 30px;
+    border-radius: 15px;
+}
+
+#exemplo-1 {
+    background:
+        linear-gradient(var(--vermelho)) padding-box,
+        linear-gradient(90deg, var(--bege), var(--vermelho)) border-box;
+}
+
+#exemplo-2 {
+    background:
+        linear-gradient(var(--vermelho)) padding-box,
+        linear-gradient(90deg, var(--vermelho), var(--bege)) border-box;
 }
 
 .btn-container {
@@ -57,10 +82,11 @@ html, body {
     justify-content: flex-end;
     align-content: flex-end;
 
-    margin-right: 0.8%;
+    margin-right: 0;
 
     gap: 0.5%;
 
+    margin-top: 100px;
 }
 
 #direita {
@@ -79,11 +105,36 @@ html, body {
     transition: 500ms;
 }
 
+#esquerda {
+    height: 45px;
+    width: 65px;
+
+    color: var(--branco);
+
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background:
+        linear-gradient(var(--vermelho)) padding-box,
+        linear-gradient(90deg, var(--bege), var(--vermelho)) border-box;
+    
+    transition: 500ms;
+}
+
 #direita:hover {
     transform: scale(1.03);
     transition: 500ms;
     background:
         linear-gradient(var(--vinho)) padding-box,
         linear-gradient(90deg, var(--vermelho), var(--bege)) border-box;
+
+}
+
+#esquerda:hover {
+    transform: scale(1.03);
+    transition: 500ms;
+    background:
+        linear-gradient(var(--vinho)) padding-box,
+        linear-gradient(90deg, var(--bege), var(--bege)) border-box;
 
 }
