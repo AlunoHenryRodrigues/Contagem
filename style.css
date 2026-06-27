@@ -64,7 +64,7 @@ html, body {
     justify-content: flex-end;
     align-content: flex-end;
     margin-right: 0.8%;
-    gap: 0.5%;
+    gap: 5%;
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -84,6 +84,13 @@ html, body {
         linear-gradient(90deg, var(--vermelho), var(--bege)) border-box;
     
     transition: 500ms;
+}
+
+#esquerda {
+    height: 45px;
+    width: 65px;
+    background-color: var(--vinho);
+    border: none;
 }
 
 #direita:hover {

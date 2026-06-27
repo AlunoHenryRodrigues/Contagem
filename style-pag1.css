@@ -44,9 +44,33 @@ html, body {
 }
 
 #titulo {
-    font-size: 2.7em;
+    font-size: 3.2em;
+    margin-top: 0;
+    margin-bottom: 8px;
+
+    opacity: 0;
+    animation: fade-in 400ms 0.2s ease-in 1 normal forwards;
 }
 
+#subtitulo-1 {
+    opacity: 0;
+    animation: fade-in 400ms 0.35s ease-in 1 normal forwards;
+}
+
+#razao {
+    opacity: 0;
+    animation: fade-in 400ms 0.5s ease-in 1 normal forwards;
+}
+
+#subtitulo-2 {
+    opacity: 0;
+    animation: fade-in 400ms 0.65s ease-in 1 normal forwards;
+}
+
+#proporcao {
+    opacity: 0;
+    animation: fade-in 400ms 0.8s ease-in 1 normal forwards;
+}
 
 .container {
     display: flex;
@@ -58,12 +82,15 @@ html, body {
 
 .imagem {
     background-color: var(--rosa);
-    height: 325px;
+    height: 355px;
     width: 600px;
-    margin-top: 135px;
+    margin-top: 115px;
     margin-left: 50px;
     margin-right: 1.7%;
     border-radius: 10px;
+
+    opacity: 0;
+    animation: fade-in 400ms 0.95s ease-in 1 normal forwards;
 }
 
 .exemplos {
@@ -72,7 +99,7 @@ html, body {
     flex-direction: row;
     margin-top: 50px;
     margin-right: 1.7%;
-    gap: 35px;
+    gap: 1%;
     font-size: large;
 }
 
@@ -91,12 +118,18 @@ html, body {
     background:
         linear-gradient(var(--vermelho)) padding-box,
         linear-gradient(90deg, var(--bege), var(--vermelho)) border-box;
+    
+    opacity: 0;
+    animation: fade-in 400ms 1.1s ease-in 1 normal forwards;
 }
 
 #exemplo-2 {
     background:
         linear-gradient(var(--vermelho)) padding-box,
         linear-gradient(90deg, var(--vermelho), var(--bege)) border-box;
+    
+    opacity: 0;
+    animation: fade-in 400ms 1.25s ease-in 1 normal forwards;
 }
 
 .btn-container {
@@ -104,7 +137,7 @@ html, body {
     justify-content: flex-end;
     align-content: flex-end;
     margin-right: 0.8%;
-    gap: 0.5%;
+    gap: 5%;
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -151,4 +184,13 @@ html, body {
     background:
     linear-gradient(var(--vinho)) padding-box,
     linear-gradient(90deg, var(--bege), var(--bege)) border-box;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
