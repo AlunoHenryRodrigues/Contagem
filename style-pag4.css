@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+:root {
+    --bege: #c59c79;
+    --vermelho: #48192e;
+    --vinho: #281822;
+    --rosa: #957083;
+    --branco: #fbf5f0;
+}
+
+*{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 370;
+}
+
+html, body {
+    margin: 0;
+    height: 100vh;
+    height: 100vh;
+    color: white;
+    background-color: var(--vinho);
+}
+
+.pinacoteca{
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    border: 2px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    margin-top: -10px;
+}
+
+
+.container {
+    margin: 0;
+    height: 80vh;
+    border: 4px solid transparent;
+    border-radius: 15px;
+    margin-left: 100px;
+    width: 1300px;
+    padding-top: 100px;
+}
+
+main{
+    display: flex;
+    justify-content: left;
+    border: 2px solid transparent;
+    width: 50%;
+    margin-left: 580px;
+}
+main h1{
+    font-weight: 400;
+    margin: 0;
+    font-size: 4rem;
+
+}
+main p{
+    font-weight: 300;
+    font-size: 1.6rem;
+    padding-top: 10px;
+}
+
+hr {
+    width: 50%;
+    margin-left: 580px;
+    color: #957083;
+}
+
+.meio{
+    margin-top: 40px;
+    border: 2px solid #957083;
+    border-radius: 10px;
+    background-color: #957083;
+    width: 50%;
+    margin-left: 580px;
+}
+.meio h1{
+    text-align: center;
+    font-weight: 400;
+    text-shadow: 4px 4px 30px rgba(0, 0, 0, 0.673);
+    letter-spacing: -1px;
+}
+.low{
+    margin-left: 580px;
+    font-size: 0.4rem;
+}
+
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    background-color: #48192e;
+    width: 50%;
+    background:
+        linear-gradient(var(--vermelho)) padding-box,
+        linear-gradient(90deg, var(--bege), var(--vermelho)) border-box;
+    opacity: 0;
+    animation: fade-in 400ms 1.1s ease-in 1 normal forwards;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    background-color: #48192e;
+    width: 50%;
+    background:
+    linear-gradient(var(--vermelho)) padding-box,
+    linear-gradient(90deg, var(--vermelho), var(--bege)) border-box;
+    opacity: 0;
+    animation: fade-in 400ms 1.25s ease-in 1 normal forwards;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    margin-right: 0.8%;
+    gap: 5%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#direita {
+    height: 45px;
+    width: 65px;
+
+    color: var(--branco);
+
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background:
+        linear-gradient(var(--vermelho)) padding-box,
+        linear-gradient(90deg, var(--vermelho), var(--bege)) border-box;
+    
+    transition: 500ms;
+}
+
+#esquerda {
+    height: 45px;
+    width: 65px;
+
+    color: var(--branco);
+
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background:
+        linear-gradient(var(--vermelho)) padding-box,
+        linear-gradient(90deg, var(--bege), var(--vermelho)) border-box;
+    
+    transition: 500ms;
+}
+
+
+#direita:hover {
+    transform: scale(1.03);
+    transition: 500ms;
+    background:
+        linear-gradient(var(--vinho)) padding-box,
+        linear-gradient(90deg, var(--vermelho), var(--bege)) border-box;
+
+}
+
+#esquerda:hover {
+    transform: scale(1.03);
+    transition: 500ms;
+    background:
+    linear-gradient(var(--vinho)) padding-box,
+    linear-gradient(90deg, var(--bege), var(--bege)) border-box;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
