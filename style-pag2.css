@@ -23,13 +23,14 @@ html, body {
     background-color: var(--vinho);
 }
 .all {
-    height: 91%;
+    position: relative;
+    height: 92%;
     margin: 0 auto;
     justify-content: center;
     border: 4px solid transparent;
     border-radius: 15px;
     width: 1300px;
-    margin-top: 0%;
+    padding-top: 20px;
 }
 .h1{
     margin-top: 0px;
@@ -96,17 +97,23 @@ p{
 }
 
 .left{
-    border: 2px solid #48192e;
-    border-radius: 10px;
+    border: 2px solid transparent;
+    border-radius: 15px;
     background-color: #48192e;
     width: 50%;
+    background:
+        linear-gradient(var(--vermelho)) padding-box,
+        linear-gradient(90deg, var(--bege), var(--vermelho)) border-box;
 }
 
 .right{
-    border: 2px solid #48192e;
-    border-radius: 10px;
+    border: 2px solid transparent;
+    border-radius: 15px;
     background-color: #48192e;
     width: 50%;
+    background:
+    linear-gradient(var(--vermelho)) padding-box,
+    linear-gradient(90deg, var(--vermelho), var(--bege)) border-box;
 }
 
 
@@ -114,11 +121,11 @@ p{
     display: flex;
     justify-content: flex-end;
     align-content: flex-end;
-
     margin-right: 0.8%;
-
     gap: 0.5%;
-
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 }
 
 #direita {
@@ -137,11 +144,36 @@ p{
     transition: 500ms;
 }
 
+#esquerda {
+    height: 45px;
+    width: 65px;
+
+    color: var(--branco);
+
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background:
+        linear-gradient(var(--vermelho)) padding-box,
+        linear-gradient(90deg, var(--bege), var(--vermelho)) border-box;
+    
+    transition: 500ms;
+}
+
+
 #direita:hover {
     transform: scale(1.03);
     transition: 500ms;
     background:
-    linear-gradient(var(--vinho)) padding-box,
-    linear-gradient(90deg, var(--vermelho), var(--bege)) border-box;
+        linear-gradient(var(--vinho)) padding-box,
+        linear-gradient(90deg, var(--vermelho), var(--bege)) border-box;
 
+}
+
+#esquerda:hover {
+    transform: scale(1.03);
+    transition: 500ms;
+    background:
+    linear-gradient(var(--vinho)) padding-box,
+    linear-gradient(90deg, var(--bege), var(--bege)) border-box;
 }

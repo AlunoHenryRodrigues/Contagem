@@ -3,7 +3,7 @@ const esquerda = document.getElementById("esquerda");
 
 document.addEventListener("keydown", (event) => {
     if (event.key === "ArrowRight") {
-        window.location.href = "index.html";
+        window.location.href = "pag2.html";
     }
 
     if (event.key === "ArrowLeft") {
@@ -12,7 +12,7 @@ document.addEventListener("keydown", (event) => {
 });
 
 direita.addEventListener("click", () => {
-        window.location.href = "pag1.html";
+        window.location.href = "pag2.html";
 });
 
 esquerda.addEventListener("click", () => {

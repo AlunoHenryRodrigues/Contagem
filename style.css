@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 :root {
     --bege: #c59c79;
     --vermelho: #48192e;
     --vinho: #281822;
     --rosa: #957083;
     --branco: #fbf5f0;
+}
+
+*{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 370;
 }
 
 html, body {
@@ -31,7 +40,6 @@ html, body {
 
 #titulo {
     font-size: 350%;
-    font-family: "Playfair", serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -44,7 +52,6 @@ html, body {
 
 #nomes {
     font-size: 1.1em;
-    font-family: "Playfair", serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
@@ -56,11 +63,11 @@ html, body {
     display: flex;
     justify-content: flex-end;
     align-content: flex-end;
-
     margin-right: 0.8%;
-
     gap: 0.5%;
-
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 }
 
 #direita {

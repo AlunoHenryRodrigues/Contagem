@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 :root {
     --bege: #c59c79;
     --vermelho: #48192e;
@@ -6,19 +8,34 @@
     --branco: #fbf5f0;
 }
 
+*{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 370;
+}
+
 html, body {
     max-height: 100vh;
-    height: 98vh;
-
-    margin-left: 17px;
-
+    height: 100vh;
     background-color: var(--vinho);
-
     color: var(--branco);
+    margin: 0;
 }
 
 .container-all {
     height: 92%;
+}
+
+.all {
+    position: relative;
+    height: 92%;
+    margin: 0 auto;
+    justify-content: center;
+    border: 4px solid transparent;
+    border-radius: 15px;
+    width: 1300px;
+    padding-top: 20px;
 }
 
 .main {
@@ -30,15 +47,6 @@ html, body {
     font-size: 2.7em;
 }
 
-.texto {
-    font-family: "Playfair", serif;
-    font-weight: 90;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-    font-size: larger;
-}
 
 .container {
     display: flex;
@@ -95,26 +103,23 @@ html, body {
     display: flex;
     justify-content: flex-end;
     align-content: flex-end;
-
-    margin-right: 0.3%;
-
+    margin-right: 0.8%;
     gap: 0.5%;
-
-    margin-top: 31.5px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 }
 
 #direita {
     height: 45px;
     width: 65px;
-
     color: var(--branco);
-
     cursor: pointer;
     border: 2px solid transparent;
     border-radius: 10px;
     background:
-        linear-gradient(var(--vermelho)) padding-box,
-        linear-gradient(90deg, var(--vermelho), var(--bege)) border-box;
+    linear-gradient(var(--vermelho)) padding-box,
+    linear-gradient(90deg, var(--vermelho), var(--bege)) border-box;
     
     transition: 500ms;
 }
@@ -122,16 +127,13 @@ html, body {
 #esquerda {
     height: 45px;
     width: 65px;
-
     color: var(--branco);
-
     cursor: pointer;
     border: 2px solid transparent;
     border-radius: 10px;
     background:
-        linear-gradient(var(--vermelho)) padding-box,
-        linear-gradient(90deg, var(--bege), var(--vermelho)) border-box;
-    
+    linear-gradient(var(--vermelho)) padding-box,
+    linear-gradient(90deg, var(--bege), var(--vermelho)) border-box;
     transition: 500ms;
 }
 
@@ -139,16 +141,14 @@ html, body {
     transform: scale(1.03);
     transition: 500ms;
     background:
-        linear-gradient(var(--vinho)) padding-box,
-        linear-gradient(90deg, var(--vermelho), var(--bege)) border-box;
-
+    linear-gradient(var(--vinho)) padding-box,
+    linear-gradient(90deg, var(--vermelho), var(--bege)) border-box;
 }
 
 #esquerda:hover {
     transform: scale(1.03);
     transition: 500ms;
     background:
-        linear-gradient(var(--vinho)) padding-box,
-        linear-gradient(90deg, var(--bege), var(--bege)) border-box;
-
+    linear-gradient(var(--vinho)) padding-box,
+    linear-gradient(90deg, var(--bege), var(--bege)) border-box;
 }
