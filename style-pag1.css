@@ -7,49 +7,88 @@
 }
 
 html, body {
-    margin: 0;
     max-height: 100vh;
-    height: 100vh;
+    height: 98vh;
+
+    margin-left: 17px;
 
     background-color: var(--vinho);
-}
 
-.main-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 92%;
-
-    cursor: default;
-}
-
-.texto {
     color: var(--branco);
+}
 
+.container-all {
+    height: 92%;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
 }
 
 #titulo {
-    font-size: 350%;
-    font-family: "Playfair", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-    
-    border-bottom: 1.8px solid var(--bege);
-    padding-bottom: 50px;
+    font-size: 2.7em;
 }
 
-#nomes {
-    font-size: 1.1em;
+.texto {
     font-family: "Playfair", serif;
+    font-weight: 90;
     font-optical-sizing: auto;
-    font-weight: 300;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
+    font-size: larger;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 60%;
+}
+
+.imagem {
+    background-color: var(--rosa);
+    height: 325px;
+    width: 600px;
+    margin-top: 135px;
+    margin-left: 50px;
+    margin-right: 1.7%;
+    border-radius: 10px;
+}
+
+.exemplos {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-right: 1.7%;
+    gap: 35px;
+    font-size: large;
+}
+
+.exemplo {
+    border: 2px solid transparent;
+    width: 50%;
+    padding: 0 2px 0 20px;
+    border-radius: 15px;
+}
+
+.caixa-ex {
+    font-size: 1.2em;
+}
+
+#exemplo-1 {
+    background:
+        linear-gradient(var(--vermelho)) padding-box,
+        linear-gradient(90deg, var(--bege), var(--vermelho)) border-box;
+}
+
+#exemplo-2 {
+    background:
+        linear-gradient(var(--vermelho)) padding-box,
+        linear-gradient(90deg, var(--vermelho), var(--bege)) border-box;
 }
 
 .btn-container {
@@ -57,10 +96,11 @@ html, body {
     justify-content: flex-end;
     align-content: flex-end;
 
-    margin-right: 0.8%;
+    margin-right: 0.3%;
 
     gap: 0.5%;
 
+    margin-top: 31.5px;
 }
 
 #direita {
@@ -79,11 +119,36 @@ html, body {
     transition: 500ms;
 }
 
+#esquerda {
+    height: 45px;
+    width: 65px;
+
+    color: var(--branco);
+
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background:
+        linear-gradient(var(--vermelho)) padding-box,
+        linear-gradient(90deg, var(--bege), var(--vermelho)) border-box;
+    
+    transition: 500ms;
+}
+
 #direita:hover {
     transform: scale(1.03);
     transition: 500ms;
     background:
         linear-gradient(var(--vinho)) padding-box,
         linear-gradient(90deg, var(--vermelho), var(--bege)) border-box;
+
+}
+
+#esquerda:hover {
+    transform: scale(1.03);
+    transition: 500ms;
+    background:
+        linear-gradient(var(--vinho)) padding-box,
+        linear-gradient(90deg, var(--bege), var(--bege)) border-box;
 
 }
