@@ -22,6 +22,7 @@ html, body {
     color: white;
     background-color: var(--vinho);
 }
+
 .all {
     position: relative;
     height: 92%;
@@ -32,37 +33,85 @@ html, body {
     width: 1300px;
     padding-top: 20px;
 }
-.h1{
-    margin-top: 0px;
-    font-size: 3.2em;
-    letter-spacing: -2px;
-    margin-bottom: 0.5%;
 
+.container-boxes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.box {
+    height: 150px;
+    width: 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    border: 2px solid transparent;
+    border-radius: 15px;
+}
+
+#box-1 {
+    background:
+        linear-gradient(var(--vermelho)) padding-box,
+        linear-gradient(to right, var(--bege), var(--vermelho)) border-box;
+    
     opacity: 0;
-    animation: fade-in 400ms 0.2s ease-in 1 normal forwards;
+    animation: fade-in 400ms 0.35s ease-in 1 normal forwards;
+}
+
+#box-2 {
+    opacity: 0;
+    animation: fade-in 400ms 1s ease-in 1 normal forwards;
+}
+
+#box-3 {
+    opacity: 0;
+    animation: fade-in 400ms 2.2s ease-in 1 normal forwards;
+}
+
+#box-2, #box-3 {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+
+    background:
+        linear-gradient(var(--vermelho)) padding-box,
+        linear-gradient(to right, var(--vermelho), var(--bege), var(--vermelho)) border-box;
+}
+
+#box-4 {
+    background:
+        linear-gradient(var(--vermelho)) padding-box,
+        linear-gradient(to left, var(--bege), var(--vermelho)) border-box;
+    
+    opacity: 0;
+    animation: fade-in 400ms 3s ease-in 1 normal forwards;
 }
 
 h1{
-    font-size: 220%;
+    font-size: 2.8em;
     letter-spacing: -1px;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 
-p{
+.txt{
     width: 30%;
     margin-top: 10px;
     font-size: 120%;
     font-weight: 199.9;
 }
 
-.grafico{
-    width: 35%;
-    border: 1px transparent;
-    border-radius: 15px;
-    margin-top: 2%;
-
-    opacity: 0;
-    animation: fade-in 400ms 0.35s ease-in 1 normal forwards;
+.qtd {
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 2em;
+    font-weight: 400;
 }
 
 .meio {

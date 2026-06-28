@@ -35,7 +35,6 @@ html, body {
 
 .texto {
     color: var(--branco);
-
 }
 
 #titulo {
@@ -48,6 +47,9 @@ html, body {
     
     border-bottom: 1.8px solid var(--bege);
     padding-bottom: 50px;
+
+    opacity: 0;
+    animation: fade-in 400ms 0.2s ease-in 1 normal forwards;
 }
 
 #nomes {
@@ -57,6 +59,8 @@ html, body {
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
+    opacity: 0;
+    animation: fade-in 400ms 0.3s ease-in 1 normal forwards;
 }
 
 .btn-container {
@@ -100,4 +104,13 @@ html, body {
         linear-gradient(var(--vinho)) padding-box,
         linear-gradient(90deg, var(--vermelho), var(--bege)) border-box;
 
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
