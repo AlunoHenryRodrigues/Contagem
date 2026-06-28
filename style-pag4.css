@@ -30,6 +30,9 @@ html, body {
     border: 2px solid transparent;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     margin-top: -10px;
+
+    opacity: 0;
+    animation: fade-in 400ms 0.2s ease-in 1 normal forwards;
 }
 
 
@@ -55,38 +58,56 @@ main h1{
     margin: 0;
     font-size: 4rem;
 
+    opacity: 0;
+    animation: fade-in 400ms 0.35s ease-in 1 normal forwards;
 }
 main p{
     font-weight: 300;
     font-size: 1.6rem;
     padding-top: 10px;
-}
 
-hr {
-    width: 50%;
-    margin-left: 580px;
-    color: #957083;
+    opacity: 0;
+    animation: fade-in 400ms 0.5s ease-in 1 normal forwards;
+
+    padding-bottom: 50px;
+    border-bottom: 2px solid var(--bege);
 }
 
 .meio{
-    margin-top: 40px;
-    border: 2px solid #957083;
-    border-radius: 10px;
-    background-color: #957083;
+    margin-top: 30px;
+    margin-bottom: 50px; /* so mudei isso pq tava mt vazio, se vc preferir pode mudar dnv */
+    border: 2px solid transparent;
+    border-radius: 15px;
+
+    background:
+        linear-gradient(var(--vermelho)) padding-box,
+        linear-gradient(to right, var(--vermelho), var(--bege), var(--vermelho)) border-box;
+    
     width: 50%;
     margin-left: 580px;
+
+    opacity: 0;
+    animation: fade-in 400ms 0.8s ease-in 1 normal forwards;
 }
+
 .meio h1{
     text-align: center;
     font-weight: 400;
     text-shadow: 4px 4px 30px rgba(0, 0, 0, 0.673);
     letter-spacing: -1px;
 }
+
+.lista {
+    font-size: 1.2em;
+}
+
 .low{
     margin-left: 580px;
     font-size: 0.4rem;
-}
 
+    opacity: 0;
+    animation: fade-in 400ms 0.95s ease-in 1 normal forwards;
+}
 
 .left{
     display: flex;
