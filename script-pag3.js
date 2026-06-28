@@ -39,6 +39,6 @@ function count(elemento, qtd, interval, timeout) {
 }
 
 count(qtdSalas, 15, 20, 550);
-count(qtdQuadros, 180, 2, 1200);
+count(qtdQuadros, 180, 1, 1200);
 count(qtdEsculturas, 50, 10, 2400);
 count(qtdFotos, 80, 5, 3150);
