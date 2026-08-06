@@ -93,6 +93,12 @@ html, body {
     animation: fade-in 400ms 0.95s ease-in 1 normal forwards;
 }
 
+.imagemx{
+    width: 540px;
+    height: 355px;
+    border-radius: 10px;
+}
+
 .exemplos {
     display: flex;
     justify-content: center;
