@@ -127,16 +127,15 @@ h1{
 
 .math-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 30px;
 }
 
 .box2 {
-    width: 20%;
+    width: 15%;
+    height: 20%;
     padding: 40px;
-
     font-size: 1.5em;
-
     border: 2px solid transparent;
     border-radius: 15px;
 }
@@ -166,6 +165,18 @@ h1{
     
     opacity: 0;
     animation: fade-in 400ms 4.65s ease-in 1 normal forwards;
+}
+
+.graficox{
+    border: 2px solid rgba(220, 188, 119, 0.297);
+    border-radius: 10px;
+    background:
+        linear-gradient(var(--vermelho)) padding-box,
+        linear-gradient(to left, var(--bege), var(--vermelho)) border-box;
+    opacity: 0;
+    animation: fade-in 400ms 4.65s ease-in 1 normal forwards;
+    width: 100%;
+    margin-top: 0px;
 }
 
 .math {
